@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    overflow-x: hidden;
+}
+
+.navbar{
+    /* padding: 5rem; */
+    position: relative;
+    height: 20rem;
+    background-color: #C281E8;
+    /* border: 1rem solid black; */
+    text-align: center;
+}
+
+.logo{
+    float: left;
+    padding: 2rem;
+    margin: 5rem;
+}
+.logo a{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+}
+.navbar-content{
+    float: right;
+    padding: 2rem;
+    margin: 5rem ;
+    /* display: none; */
+}
+.navlink{
+    border: 0.1rem solid transparent;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    margin-left: 2rem;
+    color: #fff;
+    transition: border ease 0.5s;
+}
+.navlink:hover{
+    color: #fff;
+    border: 0.1rem solid #fff;
+    transition: border ease 0.5s;
+}
+.custom-shape-divider-bottom-1621659921 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1621659921 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 69px;
+}
+
+.custom-shape-divider-bottom-1621659921 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.active{
+    border: 0.1rem solid #fff;
+    color: #fff;
+}
+.main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.image img{
+    width: 100%;
+    height: auto ;
+}
+.text{
+    width: 80rem;
+    padding: 2rem;
+    
+}
+.text h2{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+.text p{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.text a{
+    font-size: 3rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #C281E8;
+    color: #fff;
+    border: none;
+}
+
+/* SERVICE SECTION */
+
+.card-container{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* height: 70vh; */
+}
+.card{
+    width: 45rem;
+    padding: 2rem;
+    /* border: 0.05rem solid #C281E8; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform ease 0.5s;
+}
+.card:hover{
+    transform: translateY(-5rem);
+}
+.card img{
+    width: 100%;
+    height: auto;
+    /* object-fit: cover; */
+}
+.card h2{
+    font-size: 2.5rem;
+    color: #FFC344;
+}
+.card p{
+    font-size: 1.5rem;
+}
+.card a{
+    font-size: 2rem;
+    color: #fff;
+    background-color: #C281E8;
+    width: 30%;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* CONTACT */
+.contact{
+    /* border: 0.5rem solid black; */
+    padding: 2rem;
+    /* height: 70vh; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.message-container{
+    /* border: 0.5rem solid black; */
+    width: 50rem;
+    padding: 2rem;
+}
+.message-container h1{
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+}
+.form{
+    /* border: 0.1rem solid black; */
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.form input, textarea{
+    border: none;
+    margin: 1rem 0;
+    background-color: #F1F3F4;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+
+}
+.form button{
+    padding: 1rem;
+    background-color: #C281E8;
+    color: #fff;
+    font-size: 2rem;
+    border: none;
+
+}
+.socials{
+    border-bottom: 0.3rem solid #e8eaeb;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.socials i{
+    font-size: 2.5rem;
+}
+
+/* ORDER SECTION */
+.order-container{
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+.order-image img{
+    width: 100%;
+    height: auto;
+}
+.order-form{
+    /* border: 0.1rem solid black; */
+    height: 100%;
+    padding: 2rem;
+    width: 50%;
+}
+.order-form h2{
+    font-size: 3rem;
+    margin: 1rem;
+}
+.order-form input{
+    font-size: 2rem;
+    border: none;
+    background-color: #F1F3F4;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    width: 40%;
+}
+.order-form textarea{
+    width: 82.5%;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    min-width: 82.5%;
+    min-height: 20rem;
+    max-width: 82.5%;
+    max-height: 20rem;
+}
+.order-form button{
+    border: 0.1rem solid transparent;
+    font-size: 2rem;
+    width: 20%;
+    padding: 1rem;
+    margin: 1rem;
+    border: none;
+    background-color: #C281E8;
+    color: #fff;
+    transition: background-color ease 0.5s;
+}
+.order-form button:hover{
+    color: #C281E8;
+    border: 0.1rem solid #C281E8;
+    background-color: #fff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+    .message-container{
+        width: 45rem;
+    }
+    .message-container img{
+        transform: scale(0.8);
+    }
+    .card a{
+        font-size: 1.5rem;
+        width: 40%;
+        padding: 1rem;
+        margin-top: 1.5rem;
+    }
+    .order-form{
+        /* border: 0.1rem solid black; */
+        height: 100%;
+        padding: 2rem;
+        width: 60%;
+    }
+    .order-form input{
+        font-size: 1.6rem;
+        padding: 1rem 2rem;
+        margin: 1rem;
+        width: 45%;
+    }
+    .order-form textarea{
+        width: 94%;
+        font-size: 1.6rem;
+        padding: 1rem 2rem;
+        margin: 1rem;
+        min-width: 94%;
+        min-height: 10rem;
+        max-width: 94%;
+        max-height: 10rem;
+    }
+    .order-form button{
+        font-size: 2rem;
+        width: 20%;
+        padding: 1rem;
+        margin: 1rem;
+    }
+  }
+
+  @media (max-width: 1000px){
+    .navbar{
+        padding: 3rem;
+        position: relative;
+        height: 25rem;
+
+    }
+    .main{
+        width: 100%;
+    }
+    .image{
+        transform: scale(0.9);
+    }
+    
+    .text h2{
+        font-size: 3rem;
+    }
+    .text p{
+        font-size: 1.7rem;
+    }
+    .text a{
+        font-size: 2rem;
+    }
+
+    
+    .contact-image{
+        width: 50%;
+        /* border: 0.5rem solid black; */
+    }
+    .contact-image img{
+        height: auto;
+        width: 100%;
+    }
+
+    .message-container{
+        /* border: 0.5rem solid black; */
+        width: 50%;
+        padding: 2rem;
+    }
+
+    .order-form{
+        width: 75%;
+    }
+    
+  }
+  @media (max-width: 900px){
+      html{
+          font-size: 57%;
+      }
+    
+  }
+    
+  @media (max-width: 850px){
+     .order-image{
+         display: none;
+     }
+     .order-form{
+        /* border: 0.5rem solid black; */
+        width: 100%;
+     }
+  }
+  @media (max-width: 750px){
+    .navbar{
+        height: 20rem;
+        padding: 2rem;
+    }
+    .logo{
+        float: left;
+        padding: 1rem;
+    }
+    .logo a{
+        padding: 1rem;
+    }
+    .navbar-content{
+        padding: 1rem;
+    }
+    .navlink{
+        font-size: 2rem;
+        font-weight: 500;
+        padding: 1rem;
+        margin-left: 1rem;
+    }
+    .image {
+        display: none;
+    }
+    .contact-image{
+        display: none;
+    }
+    .message-container{
+        width: 100%;
+    }
+    .card a{
+        width: 60%;
+    }
+    .card-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card{
+        margin-bottom: 3rem;
+    }
+
+  }
+
+  @media (max-width: 600px){
+    .navbar{
+        height: 20rem;
+        padding: 1rem;
+    }
+    .logo{
+        padding: 0.5rem;
+    }
+    .logo a{
+        padding: 0.5rem;
+    }
+    .navbar-content{
+        padding: 0.5rem;
+    }
+    .navlink{
+        font-size: 2rem;
+        padding: 0.5rem;
+        margin-left: 1rem;
+    }
+  }
+  @media (max-width: 550px){
+      .navlink{
+          font-size: 1.5rem;
+      }
+      .logo{
+          margin: 4rem 1rem 4rem 1rem;
+      }
+      .navbar-content{
+          margin: 4rem 1rem 4rem 1rem;
+      }
+      .text{
+          padding: 5rem;
+      }
+      
+      .order-form input{
+        width: 95%;
+    }
+    .order-form textarea{
+        width: 95%;
+        min-width: 95%;
+        min-height: 10rem;
+        max-width: 95%;
+        max-height: 10rem;
+    }
+    .order-form button{
+        width: 30%;
+    }
+
+  }
